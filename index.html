@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divyansh Choubey</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./pixelcut-export.jpg"/>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init({
+            publicKey: "5HQNwqd8g5Mik--Op",
+          });
+       })();
+    </script>
+    <script async src="script.js"></script>
+  </head>
+  <body>
+    <heaader class="header">
+      <a href="#home" class="logo">Mr. <span>Divyansh</span></a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#education">Education</a>
+        <a href="#services">Services</a>
+        <a href="#websites">Websites</a>
+        <a href="#testimonials">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </heaader>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, I'm <span>Divyansh Choubey</span></h1>
+        <div>
+          <h3>I'm a <span class="auto-type"></span> </h3>
+      </div>
+        <p>
+        Welcome to my portfolio! As a passionate front-end developer, I specialize in building modern, responsive, and user-friendly web applications using HTML, CSS, JavaScript, and React. With a strong eye for design and a focus on clean, efficient code, I create intuitive interfaces that deliver great user experiences.Explore my work — from a fully responsive e-commerce website to a sleek, static Coca-Cola brand website — and see how I turn creative ideas into functional, visually engaging web pages.
+        </p>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/divyansh-choubey-48a812245/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/divyanshchoubeybiodata" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="https://x.com/Divyanshch64688" target="_blank"><i class="bx bxl-twitter"></i></a>
+        </div>
+
+        <div class="btn-group">
+          <a href="mailto:divyansh.choubey01@gmail.com" target="_blank" class="btn">Hire Me</a>
+          <a href="tel:+91 9039770725" class="btn">Contact</a>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <img src="./pixelcut-export.jpg" alt="" />
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <h2 class="heading">Education</h2>
+
+      <div class="timeline-items">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2017 - 2018</div>
+          <div class="timeline-content">
+            <h3>Primary Education</h3>
+            <p>
+              Shanti Public Higher Secondary School<br/>
+              Guna(M.P)
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2019 - 2020</div>
+          <div class="timeline-content">
+            <h3>Secondary Education</h3>
+            <p>
+              New Life Children Higher Secondary School <br/>
+              Guna(M.P)<br/>
+              <b>PCM</b>
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2020 - 2024</div>
+          <div class="timeline-content">
+            <h3>Graduation</h3>
+            <p>
+              Lakshmi Narain College of Technology<br/>
+              Bhopal(Madhya Pradesh)<br/>
+              <b>BTECH</b>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h2 class="heading">Services</h2>
+
+      <div class="services-container">
+        <div class="service-box">
+          <div class="service-info">
+            <h4>Web Development</h4>
+            <p>
+              I provide tailored web development services, crafting responsive, user-friendly websites and applications that blend performance with great design. Specializing in front-end development with HTML, CSS, JavaScript, and React, I focus on building secure, scalable solutions — including e-commerce platforms and custom static websites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="websites" id="websites">
+      <div class="websites-box">
+        <h2 class="heading"><span>MY</span> Websites</h2>
+        <div class="websites-wrapper" id="websitesList">
+          <script>
+            // Array of website details
+            const websites = [
+              { name: "Responsive E-Commerce", img: "./Responsive E-commerce.png", url: "https://divyanshchoubeybiodata.github.io/Responsive-E-Commerce-Website/" },
+              { name: "Coca-Cola Static Website", img: "./Coca-Cola.png", url: "https://divyanshchoubeybiodata.github.io/staticwebsite/" }
+            ];
+          
+            // Generate and insert website items dynamically
+            document.getElementById("websitesList").innerHTML = websites
+              .map(website => `
+                <div class="website-item">
+                  <a href="${website.url}" target="_blank">
+                    <img src="${website.img}" alt="${website.name}" />
+                    <h2>${website.name}</h2>
+                  </a>
+                </div>
+              `)
+              .join("");
+          </script>    
+        </div>
+      </div>
+    </section>
+    
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials-box">
+        <h2 class="heading">Skills</h2>
+    
+        <div class="websites-wrapper" id="skillsList">
+          <script>
+            // Array of skills with image paths
+            const skills = [
+              { name: "HTML", img: "./html.png" },
+              { name: "CSS", img: "./css.png" },
+              { name: "JavaScript", img: "./js.png" },
+              { name: "React JS", img: "./react.png" },
+              { name: "Tailwind CSS", img: "./tailwind.png" }
+            ];
+          
+            // Generate and insert skill items using map()
+            document.getElementById("skillsList").innerHTML = skills
+              .map(skill => `
+                <div class="website-item">
+                  <img src="${skill.img}" alt="${skill.name}" />
+                  <h2>${skill.name}</h2>
+                </div>
+              `)
+              .join("");
+          </script>
+        </div>
+      </div>
+    </section>
+    
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form id="ContactForm">
+        <div class="input-group">
+          <div class="input-box">
+            <input id="name" type="text" placeholder="Full Name" />
+            <input id="email" type="email" placeholder="Enter Your Email" />
+          </div>
+          <div class="input-box">
+            <input id="phone" type="number" placeholder="Phone Number" />
+            <input id="title" type="text" placeholder="Subject" />
+          </div>
+        </div>
+
+        <div class="input-group-2">
+          <textarea
+            name=""
+            id="msg"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+          ></textarea>
+          <input type="submit" value="Send Message" class="btn" />
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="social">
+        <a href="https://api.whatsapp.com/send/?phone=9039770725&text&type=phone_number&app_absent=0" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100066867413324" target="_blank"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/divyanshchoubey07/?next=%2F" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+      </div>
+
+      <ul class="list">
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#home">About Me</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+        <li>
+          <a href="#testimonials">Skills</a>
+        </li>
+      </ul>
+      <p class="copyright">© <script>document.write(new Date().getFullYear());</script> <a class="Link" href="https://github.com/divyanshchoubeybiodata">Divyansh Choubey</a> | All Right Reserved</p>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings :["Web Developer", "React Developer", "Software Developer"],
+            typeSpeed : 150,
+            backSpeed : 150,
+            loop: true
+        }) 
+    </script>
+  </body>
+</html>
