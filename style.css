@@ -617,6 +617,9 @@ footer .social a {
   .services {
     padding-bottom: 7rem;
   }
+  .service-box {
+    height: 500px;
+}
   .testimonials .wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
